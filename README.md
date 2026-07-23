@@ -46,9 +46,17 @@ rustc --test rust/solution.rs -o /tmp/sol_test && /tmp/sol_test
 ### C# / .NET
 Precisa de um `.csproj` (não roda arquivo solto), por isso a subpasta
 `csharp/` é um projeto de console.
+
 ```bash
+# criar o projeto (uma vez por exercício)
+dotnet new console -o csharp -n NomeDoExercicio
+
+# rodar
 dotnet run --project csharp
 ```
+
+Se preferir manter o arquivo como `Solution.cs` (em vez do `Program.cs`
+gerado), é só renomear — o SDK compila todos os `.cs` da pasta.
 
 > Cada solução tem um pequeno bloco de casos de teste no próprio arquivo
 > que imprime `[ok]` / `[FAIL]`, então rodar já valida os exemplos.
