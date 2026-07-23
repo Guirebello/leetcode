@@ -1,0 +1,9 @@
+# C# / .NET build output
+bin/
+obj/
+
+# Rust single-file build output (compiled to /tmp, but just in case)
+*.rs.out
+
+# Node
+node_modules/
