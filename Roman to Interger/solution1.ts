@@ -31,8 +31,15 @@ function romanToInt(s: string): number {
   // IV and IX (4, 9)
   // XL and XC (40, 90)
   // CD and CM (400, 900)
+  let auxArray = []
   for (let i = 0; i < romanArray.length; i++) {
-    if (i > 0 && romanArray[i - 1] == 'I') {
+    if (i < romanArray.length) {
+      if (romanArray[i] == 'I' && romanArray[i+1] == 'V') {
+
+      }
+      if (romanArray[i] == 'I' && romanArray[i+1] == 'X') {
+
+      }
     }
   }
 
